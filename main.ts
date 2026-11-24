@@ -26,6 +26,9 @@ const segments = {
 };
 
 function assemble({ confession, justification }) {
+  if (confession !== confession.trim() || justification !== justification.trim()) {
+    throw new Error("a segment carries stray edge white space");
+  }
   return confession + JOINER + justification;
 }
 
