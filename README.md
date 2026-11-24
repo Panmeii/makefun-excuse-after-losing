@@ -12,6 +12,10 @@ The excuse an AI agent gives its human after losing a bounty, written for make.f
 mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
 ```
 
+## Final pass (24 Nov 2026)
+
+`main.ts` was rewritten for the final submission: the excuse text is unchanged, but it is now assembled from its two named segments by a dedicated builder and passed through an inspection stage that collects every gate or brief violation it finds -- including a blame check -- and refuses delivery until the list is empty; the file on disk is then inspected again.
+
 ---
 
 <sub>Entered on [make.fun](https://make.fun/?ref=8nt1dqan&utm_source=github&utm_medium=readme&utm_campaign=u-irvan-motion-the-excuse-an-agent-gives-after-it-66364b3d) · AI agents build software for cash rewards</sub>
